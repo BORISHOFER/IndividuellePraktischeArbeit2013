@@ -1,0 +1,214 @@
+/**
+ * Autor: Boris Hofer
+ * Datei: style.css
+ * Datum: 27.02.2013
+ *
+ * CSS Design aller Views
+ */
+
+/* Viewuebergreifend */
+
+body {
+    font-family: sans-serif;
+}
+
+/* Runde Buttons (manualButton und backButton) */
+.roundButton {
+    width: 41pt;
+    height: 41pt;
+    border-radius: 30pt;
+    background-color: white;
+    border: none;
+    font-size: 26pt;
+    line-height: 26pt;
+    box-shadow: inset 2pt 2pt 5pt gold;
+    color: darkorange;
+}
+
+/**
+ * Footer Logo
+ */
+#logo {
+    position: absolute;
+    bottom: 12pt;
+    left: 41%;
+}
+
+/**
+ * Standard Button
+ */
+.menuButton {
+    position: absolute;
+    left: 0pt;
+    right: 0pt;
+    height: 41pt;
+    font-size: 15pt;
+    border-radius: 12pt;
+    box-shadow: inset 5pt 1pt 5pt gold;
+    border: none;
+    background-color: white;
+    color: darkorange;
+}
+
+/* View 1 */
+#manualButton {
+    position: absolute;
+    top: 9pt;
+    right: 5pt;
+}
+
+/**
+ * Dunklere Farbe fuer wichtige Stichwoerter 
+ * in Benutzeranleitung
+ */
+.darkerColor {
+  color: red;
+}
+
+/**
+ * links anliegender Titeltext
+ */
+#viewTitle1 {
+    position: absolute;
+    top: 0pt;
+    left: 5pt;
+    color: darkorange;
+}
+
+
+/**
+ * Feld fuer Anleitungstext
+ * Hinweis: scrollbar
+ */
+#manualField {
+    display: none;
+    background-color: white;
+    position: absolute;
+    top: 62pt;
+    height: 235pt;
+    z-index: 1;
+    left: 0pt;
+    right: 0pt;
+    padding: 5pt;
+    overflow: auto;
+    font-size: 14pt;
+    color: darkorange;
+}
+
+/**
+ * Abstand zwischen Untertitel und Absatzt
+ */
+h4 {
+    margin-bottom: -11pt;
+}
+
+/**
+ * Buttonpositionierunngen
+ */
+#scannButton {
+    top: 11pt;
+}
+#editorButton {
+    top: 61pt;
+}
+#exitButton {
+    top: 110pt;
+}
+
+/**
+ * Schattierung der Grundelemente
+ */
+.menu {
+    position: absolute;
+    top: 62pt;
+    left: 0pt;
+    right: 0pt;
+    box-shadow: 1pt 1pt 20pt silver;
+    height: 245pt;
+}
+
+
+/**
+ * Listenstyles entfernen
+ */
+.menu1, .menu2, .menu3 ul {
+   list-style: none;
+}
+
+/* View 2 & 3*/
+
+#infobox {
+    z-index: 1;
+    position: absolute;
+    top: 62pt;
+    bottom: 62pt;
+    left: 0pt;
+    right: 0pt;
+    background-color: white;
+    color: orange;
+    padding: 12pt;
+    display: none;
+    -webkit-transition: all 2s;
+    font-size: 15pt;
+}
+
+#backButton {
+    position: absolute;
+    top: 10pt;
+    left: 5pt;
+}
+/**
+ * rechts anliegender Titeltext
+ */
+#viewTitle2 {
+    position: absolute;
+    top: 0pt;
+    right: 5pt;
+    color: darkorange;
+}
+
+/* View 2 */
+
+#listOutput {
+    overflow: auto;
+    height: 245pt;
+    color: darkorange;
+}
+
+#listOutput p{
+    padding: 5pt;
+}
+
+#listOutput hr {
+    box-shadow: 0pt 0pt 5pt orange;
+    border: none;
+    border-top: 1pt solid wheat;
+}
+
+/* View 3 */
+
+/**
+ * Feld für Wichteltexte
+ * Hinweis: scrollbar
+ */
+#wichteltextField {
+    position: absolute;
+    top: 68pt;
+    left: 0pt;
+    right: 0pt;
+    height: 65pt;
+    font-size: 12pt;
+    z-index: 1;
+    border: 1pt solid wheat;
+    box-shadow: 0pt 0pt 5pt wheat;
+}
+
+/**
+ * Buttonpositionierunngen
+ */
+#addLinkButton {
+    top: 82pt;
+}
+#scannButton2 {
+    top: 129pt;
+}

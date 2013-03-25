@@ -1,0 +1,138 @@
+<!-- 
+  Autor: Boris Hofer
+  Datei: index.html
+  Datum: 27.02.2013
+
+  View 1 - Hauptmenu
+-->
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>WichtelApp</title>
+        <link href="./css/style.css" type="text/css" rel="stylesheet">
+        <script language="javascript" type="text/javascript" src="file:///android_asset/www/js/cordova-2.5.0.js"></script>
+        <script language="javascript" type="text/javascript" src="file:///android_asset/www/js/app.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 id="viewTitle1">WichtelApp</h1>
+            <button id="manualButton" class="roundButton">?</button>
+        </header>
+        <!-- Feld zur Anleitungs-Ausgabe -->
+	<div id="manualField">
+		<h3>Benutzeranleitung</h3>
+		<p>
+			WichtelApp ist eine App zum schreiben und lesen von Wichteltexten, welche auf 
+			einem Wichteltag gespeichert werden. 
+			<br />
+			<br />
+			<b>
+			Scrollen Sie bitte durch die folgenden Seiten um mehr zu erfahren
+			</b>
+		</p>
+		<h4>Wichteltexte</h4>
+		<p>
+			Wichteltexte sind kurze Textnachrichten mit einer länge von maximal 90 Zeichen. 
+		</p>
+			<h4>Wichteltag</h4>
+		<p>
+			Wichteltags sind speziell für diese App formatierte NFC-Tags 
+			(Near Field Communication), auf welchen Wichteltexte gespeichert werden können.
+		</p>
+		<h4>Umgang mit NFC-Tags</h4>
+		<p>
+			Der sichere Umgang mit NFC-Tags garantiert eine reibungslose Datenübertragung 
+			zwischen NFC fähigem Smartphone und NFC-Tag.
+			<br />
+			<br />
+			Um einen Wichteltag zu nutzten müssen sie diesen berühren:
+			<img src="file:///android_asset/www/images/manual.png" alt="Manual Image"></img>
+			Berühren Sie den Wichteltag mit dem oberen Bereich der Rückseite Ihres Smartphones. 
+			Achten Sie darauf, dass das Gerät mit einer eindeutigen Bewegung dicht an den 
+			Wichteltag gebracht wird.
+			<br />
+			<br />
+			Durch kurzes Vibrieren signalisiert Ihnen WichtelApp, dass die Datenübertragung 
+			abgeschlossen wurde. Nach Abschluss der Datenübertragung können Sie das Gerät 
+			wieder vom Wichteltag entfernen. Achten Sie auch beim Entfernen des Gerätes auf 
+			einen deutlichen Bewegungsablauf. Zitternde, ruckartige oder langsame Bewegungen 
+			können zu unerwünschten Ergebnissen führen. 
+		</p>
+		<h4>Auslesen eines Wichteltags</h4>
+		<p>
+			Halten Sie bitte einen Wichteltag bereit. 
+			<br />
+			<br />
+			Um die Wichteltexte eines Wichteltags auszulesen klicken Sie im Hauptmenu auf den 
+			Menupunkt 
+                        <br />
+                        <span class="darkerColor">[ Scanne Wichteltag ]</span> und folgen Sie den 
+                        Bildschirmausgaben. 
+			<br />
+			<br /> 
+			Es kann jeweils nur ein Wichteltag auf einmal gescannt werden! Wenn Sie also einen 
+			anderen Wichteltag scannen wollen, gelangen Sie über den runden Button in der 
+			oberen linken Ecke des Displays <span class="darkerColor">(<)</span> wieder zurück 
+                        in das Hauptmenu, 
+                        <br />von wo aus sie erneut via 
+                        <br /><span class="darkerColor">[ Scanne Wichteltag ]</span> einen Suchvorgang 
+                        starten können.
+		</p>
+		<h4>Wichteleditor</h4>
+		<p>
+			Halten Sie bitte einen Wichteltag bereit.
+			<br />
+			<br />
+			Um einen Wichteltext auf einem Wichteltag abzulegen, muss dieser zuerst im 
+			Wichteleditor verfasst werden. Den Wichteleditor erreichen Sie im Hauptmenu über 
+			den Menupunkt <span class="darkerColor">[ Schreibe Wichteltext ]</span>. 
+			<br/> 
+			Im Textfeld des Wichteleditors können 
+			Sie Ihre persönliche Wichtelnachricht verfassen. 
+			<br />
+			<br />
+			Bitte verwenden Sie in Ihren Wichteltexten keine Sonderzeichen wie Geschweifte-, 
+			Eckige-Klammern oder Semikolon.
+			<br />
+			<br />
+			Die Anzahl verwendbaren Zeichen ist auf 90 
+			beschränkt. Über den Button <span class="darkerColor">[ link hinzufügen ]</span> 
+                        können Sie Ihrem Wichteltext eine Hyperlink hinzufügen, dieser wird jeweils am Ende 
+                        des bereits verfassten Textes angehängt. 
+			<br /> 
+			Bitte beachten Sie auch beim Einfügen eines Links das lediglich 90 
+			Zeichen für die Nachricht verwendet werden können. 
+			<br />
+			<br /> 
+			Wenn Sie mit Ihrem 
+			Wichteltext zufrieden sind, können Sie auf <span class="darkerColor">
+                        [ Suche und beschreibe NFC-Tag ]</span> 
+			klicken. Folgen Sie den Hinweisen auf dem Bildschirm und Ihre Nachricht wird 
+			erfolgreich auf den Wichteltag übertragen und ersetzt automatisch den ältesten 
+			sich auf dem Wichteltag befindlichen Wichteltext.
+		</p>
+		<br />
+		<br />
+		Viel Vergnügen!
+		<br />
+	</div>
+	<!-- Hauptmenupunkte -->
+	<nav class="menu">
+            <ul>
+                <li>
+                    <button id="listButton" class="menuButton">Scanne Wichteltag</button>
+		</li>
+                <li>
+                    <button id="editorButton" class="menuButton">Schreibe Wichteltext</button>
+		</li>
+                <li>
+                    <button id="exitButton" class="menuButton">Beenden</button>
+		</li>
+            </ul>
+        </nav>
+        <footer>
+            <img src="./images/logo.gif" alt="logo" id="logo"></img>
+        </footer>
+    </body>
+</html>

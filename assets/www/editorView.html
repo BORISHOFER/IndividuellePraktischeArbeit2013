@@ -1,0 +1,37 @@
+<!--
+  Autor: Boris Hofer
+  Datei: editorView.html
+  Datum: 27.02.2013
+
+  View 3 - editorView
+-->
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title id="viewTitle2">WichtelApp</title>
+        <link href="./css/style.css" type="text/css" rel="stylesheet">
+        <script language="javascript" type="text/javascript" src="file:///android_asset/www/js/cordova-2.5.0.js"></script>
+        <script language="javascript" type="text/javascript" src="file:///android_asset/www/js/phonegap-nfc-0.4.1.js"></script>   
+        <script language="javascript" type="text/javascript" src="./js/infoBoxTool.js"></script>
+        <script language="javascript" type="text/javascript" src="file:///android_asset/www/js/editor.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 id="viewTitle2">Wichteleditor</h1>
+            <button id="backButton" class="roundButton"><</button>
+        </header>
+	<textarea rows="5" id="wichteltextField" maxlength="90"></textarea>
+	<nav class="menu">
+            <ul>
+                <li>
+                    <button id="addLinkButton" class="menuButton">link hinzufügen</button>
+		</li>
+                <li>
+                    <button id="scannButton2" class="menuButton">Suche und beschreibe NFC-Tag</button>
+		</li>
+            </ul>
+        </nav>
+        <div id="infobox"></div>
+    </body>
+</html>
